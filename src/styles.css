@@ -216,10 +216,42 @@ footer {
     padding: 10px 10px 10px 0px;
 }
 
+#sorting {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: var(--off-white);
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "poppins", sans-serif;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#sorting:hover, #sorting:focus {
+    background-color: var(--main-blue);
+    color: white;
+    border-color: var(--off-white);
+}
+
 .taskBtn {
-    width: 100px;
+    background-color: var(--main-blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "poppins", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 25%;
     align-self: center;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.taskBtn:hover {
+    background-color: darkblue;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 
