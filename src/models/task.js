@@ -1,4 +1,4 @@
-export const createTask = (taskTitle, taskDescription = '', taskDueDate = '', taskPriority = 'low', taskNotes = '') => {
+export const createTask = (taskTitle, taskDescription = '', taskDueDate = '', taskPriority = 'low') => {
     let isTaskComplete = false;
 
     const validPriorities = ['low', 'medium', 'high'];
@@ -24,7 +24,6 @@ export const createTask = (taskTitle, taskDescription = '', taskDueDate = '', ta
     const getTaskDescription = () => taskDescription;
     const getTaskDueDate = () => taskDueDate;
     const getTaskPriority = () => taskPriority;
-    const getTaskNotes = () => taskNotes;
     const getIsTaskCompleted = () => isTaskComplete;
 
     const toggleTaskCompletion = () => {
@@ -38,7 +37,6 @@ export const createTask = (taskTitle, taskDescription = '', taskDueDate = '', ta
         getTaskDescription,
         getTaskDueDate,
         getTaskPriority,
-        getTaskNotes,
         getIsTaskCompleted,
         toggleTaskCompletion,
     }

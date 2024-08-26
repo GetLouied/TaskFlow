@@ -20,7 +20,46 @@
             </div>
             <button class="hoverShade">View Completed Projects</button>
         </aside>
-        <main id="content"></main>
+
+
+        <main id="content">
+            <div id="project">
+                <div id="projectInformation">
+                    <h1>Project Title</h1>
+                    <p>MM/DD/YYYY</p>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+            </div>
+
+            <div id="sort">
+                <label for="sorting">
+                    <select name="sorting" id="sorting">
+                        <option value="">Select</option>
+                        <option value="sortHigh">Highest Priority</option>
+                        <option value="sortLow">Lowest Priority</option>
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                    </select>
+                </label>
+            </div>
+
+            <div id="tasks">
+                <div id="taskInformation">
+                    <h4>Task Title</h4>
+                    <p class="priority low">Priority</p>
+                </div>
+                <p>Description Here</p>
+                <div id="taskFooter">
+                    <p>MM/DD/YYYY</p>
+                    <label for="completed"> Completed?
+                    <input id="completed" type="checkbox">
+                    </label>
+                </div>
+            </div>
+            <button class="taskBtn">Add Task</button>
+        </main>
+
+
     </div>
     <footer>
         <p> &copy Louis DeRienzo 2024 - The Odin Project</p>
