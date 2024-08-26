@@ -10,7 +10,16 @@
         <img src="./assets/images/taskFlowLogo.png" alt="Task Flow Logo" width="150px">
     </header>
     <div id="container">
-        <aside id="sidebar"></aside>
+        <aside id="sidebar">
+            <label for="search" class="search">
+                <input type="search" id="search" placeholder="Search">
+            </label>
+            <button class="hoverShade">Add Project <span class="addPlus">+</span></button>
+            <div id="recentProjects">
+            <h3>Latest Projects</h3>
+            </div>
+            <button class="hoverShade">View Completed Projects</button>
+        </aside>
         <main id="content"></main>
     </div>
     <footer>

@@ -1,3 +1,5 @@
+/********* Base Variabes & Layout *********/
+
 :root {
     --off-white: #FAF9F6;
     --main-blue: #00A7F5;
@@ -16,6 +18,7 @@ html, body {
     padding: 0;
     overflow: hidden;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -30,21 +33,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-#container {
-    display: flex;
-    flex: 1;
-}
-
-#sidebar {
-    background-color: var(--off-white);
-    width: 250px;
+    box-shadow: 4px 4px 5px 1px rgb(0 0 0 / 20%);
+    z-index: 1;
 }
 
 main {
     flex: 1; 
-    background-color: red;
+    background-color: white;
     overflow: auto; 
 }
 
@@ -57,4 +53,98 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    box-shadow: 4px 4px 5px 1px rgb(0 0 0 / 20%);
+    z-index: 3;
 }
+
+#container {
+    display: flex;
+    flex: 1;
+}
+
+/********* Sidebar *********/
+
+#sidebar {
+    background-color: var(--off-white);
+    width: 250px;
+    box-shadow: 4px 4px 5px 1px rgb(0 0 0 / 20%);
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+#sidebar button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#search {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    height: 35px;
+    font-size: 15px;
+
+    box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 4%);
+}
+.search {
+    width: 100%;
+}
+
+.addPlus {
+    border: 5spx solid white;
+    border-radius: 100px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#sidebar .hoverShade {
+    position: relative;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out, padding-right 0.5s ease-in-out;
+    padding-right: 10px;
+    color: black;
+    width: 100%;
+}
+
+#sidebar .hoverShade::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--main-blue);
+    z-index: -1;
+    transition: left 0.5s ease-in-out;
+}
+
+#sidebar .hoverShade:hover::before {
+    left: 0;
+}
+
+#sidebar .hoverShade:hover {
+    color: white;
+    padding-right: 15px;
+}
+
+/********* Project Modal *********/
+
+/********* Task Modal *********/
+
+/********* Projects *********/
+
+/********* Tasks *********/
+
+
+
+
+
+
