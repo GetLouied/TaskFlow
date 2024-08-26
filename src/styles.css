@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}
+
+header {
+    background-color: blue;
+    height: 50px;
+    width: 100%; 
+}
+
+#container {
+    display: flex;
+    flex: 1;
+}
+
+#sidebar {
+    background-color: yellow;
+    width: 250px;
+}
+
+main {
+    flex: 1; 
+    background-color: red;
+    overflow: auto; 
+}
+
+footer {
+    background-color: blue;
+    height: 50px;
+    width: 100%;
+}
